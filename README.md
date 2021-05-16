@@ -1,5 +1,5 @@
 # TuxAssistant
-Tux assistant project
+Tux assistant project using python3.
 
 ### Requirements:
 1. PyAudio
