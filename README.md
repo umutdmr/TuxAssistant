@@ -14,7 +14,7 @@ Tux assistant project
 4. playsoud
 * pip install playsound
 
-5.gtts
+5. gtts
 * pip install gTTs
 
 6. PyObjC
