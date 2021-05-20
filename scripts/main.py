@@ -5,6 +5,9 @@ import playsound as ps
 from gtts import gTTS
 import os
 import random as rn
+from googletrans import Translator
+
+translator = Translator()
 
 
 def record_audio():
@@ -48,6 +51,10 @@ def respond(voice_data):
             speak(wikipedia.summary(sub))
         except:
             speak("Couldn't find anything")
+    elif voice_data.startswith("translate"):
+        sentence = ' '.join(voice_data.split()[1:])
+        tr_sentence = translator.translate(sentence, src="en", dest="tr")
+        print(tr_sentence.text)
     else:
         speak("Nothing to find")
 
